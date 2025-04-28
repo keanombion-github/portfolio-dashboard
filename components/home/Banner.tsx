@@ -9,7 +9,7 @@ import icon3 from '@/assets/images/banner-shape-3.png'
 import icon4 from '@/assets/images/banner-shape-1.png'
 
 export const Banner = () => {
-    const { theme, setTheme } = useTheme();
+    const { theme } = useTheme();
     return (
         <div className="flex items-center justify-center border-b-2 border-dashed border-[hsl(240, 3.7%, 15.9%)]">
             <div className="container mx-auto border-l-2 border-r-2 border-dashed border-[hsl(240, 3.7%, 15.9%)] py-16 px-2 relative">

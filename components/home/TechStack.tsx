@@ -4,7 +4,7 @@ import { TechSkills } from "@/lib/data"
 import { useTheme } from "next-themes"
 
 export const TechStack = () => {
-    const { theme, setTheme } = useTheme()
+    const { theme } = useTheme()
     return (
         <div className="border-b-2 border-dashed border-[hsl(240, 3.7%, 15.9%)]">
             <div className="container mx-auto px-6 py-24 border-r-2 border-l-2 border-dashed border-[hsl(240, 3.7%, 15.9%)] grid lg:grid-cols-12">
