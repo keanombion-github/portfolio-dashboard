@@ -24,6 +24,7 @@ export function ProjectForm({ open, setOpen, onSubmit }: Props) {
     title: "",
     description: "",
     image: "",
+    link: "",
     github: "",
   });
 
@@ -32,12 +33,12 @@ export function ProjectForm({ open, setOpen, onSubmit }: Props) {
   };
 
   const handleSubmit = () => {
-    if (!form.title || !form.description || !form.image || !form.github) {
+    if (!form.title || !form.description || !form.image || !form.link || !form.github) {
       alert("All fields are required.");
       return;
     }
     onSubmit({ ...form, id: 0 }); // ID will be set in parent
-    setForm({ title: "", description: "", image: "", github: "" });
+    setForm({ title: "", description: "", image: "", link: "", github: "" });
   };
 
   return (
@@ -58,6 +59,10 @@ export function ProjectForm({ open, setOpen, onSubmit }: Props) {
           <div>
             <Label htmlFor="image">Image URL</Label>
             <Input name="image" value={form.image} onChange={handleChange} />
+          </div>
+          <div>
+            <Label htmlFor="image">Link URL</Label>
+            <Input name="image" value={form.link} onChange={handleChange} />
           </div>
           <div>
             <Label htmlFor="github">GitHub Link</Label>

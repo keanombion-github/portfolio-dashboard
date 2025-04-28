@@ -16,7 +16,7 @@ export default function AdminProjectsPage() {
   };
 
   return (
-    <div className="p-4 space-y-4">
+    <div className="p-4 space-y-4 container mx-auto">
       <h1 className="text-2xl font-bold">Admin – Projects</h1>
       <Button onClick={() => setOpen(true)}>+ Add New Project</Button>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
